@@ -96,12 +96,13 @@ int main(){
 				itemY = 4;
 				itemX = 7;
 				break;
-			case 4:
-				itemCount = 1;
-				break;
 		}
 
 		if(itemY == playerY && itemX == playerX){
+			if (itemCount == 3){
+				itemCount = 1;
+			}
+
 			itemCount ++;
 			score ++;
 		}
